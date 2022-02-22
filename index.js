@@ -119,6 +119,20 @@ const deep = {a:{b:{c:"666"}}};
 console.log("getIn",Map(deep).getIn(["a","b","c"]))
 
 
+/*
+------------和JSON.stringify的对比
+*/
+
+const obj = {
+  a:undefined,
+  b:()=>{console.log("123")}
+}
+console.log(JSON.stringify(obj)); //{}
+console.log(Map(obj).toJS()); //{ a: undefined, b: [Function: b] }
+
+
+
+
 
 
 
