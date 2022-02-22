@@ -11,8 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.3.0",
-    "ramda":"*",
     "immutable":"*"
   },
   "devDependencies": {

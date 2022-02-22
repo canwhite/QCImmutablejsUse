@@ -1,4 +1,3 @@
-var R = require('ramda');
 const { Map,List,fromJS,toJS,is} = require('immutable');
 
 /*
