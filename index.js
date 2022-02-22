@@ -1,4 +1,4 @@
-const { Map,List,fromJS,toJS,is} = require('immutable');
+const { Map,List,fromJS,toJS,is,getIn} = require('immutable');
 
 /*
 ----------原生的mutable,也是为了节省内存------------
@@ -109,6 +109,15 @@ const list2 = List([1,2]);
 // Object.is(map1, map2) // false
 console.log("map.is",is(map11, map22))  // true
 console.log("list.is",is(list1,list2));
+
+
+/*
+------------深度取值getIn------------
+*/
+
+const deep = {a:{b:{c:"666"}}};
+console.log("getIn",Map(deep).getIn(["a","b","c"]))
+
 
 
 
